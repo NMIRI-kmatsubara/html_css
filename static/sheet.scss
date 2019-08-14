@@ -1,0 +1,63 @@
+$main-height: 200px;
+$base-color: red, blue,yellow, green;
+$defalt-width: 500px;
+
+@mixin boxTemplate($width: 100%, $height: $main-height, $float:left){
+    width: $width;
+    height: $height;
+    float: $float;
+}
+
+
+@for $i from 1 through 4 {
+    .box#{$i} {
+        background-color: nth($base-color,$i);
+
+        @if ($i==1 or $i==3){
+            @include boxTemplate(25%,$main-height);
+        }
+        @if ($i==2 or $i==4){
+            @include boxTemplate(25%,$main-height, right);
+        }
+
+        /*
+
+        //box1
+        @if ($i == 1) {
+            @include boxTemplate(30px);
+        }
+        //box2
+        @if ($i == 2) {
+            @include boxTemplate(30px);
+        }
+        //box3
+        @if ($i == 3) {
+            @include boxTemplate(30px);
+            //margin-left: $defalt-width;
+        }
+        //box4
+        @if ($i == 4) {
+            @include boxTemplate(30px);
+        }
+        */
+    }
+
+}
+
+
+.boxA {
+    //border: solid 8px #00a0e9;
+    //background-color: #a0e0fe;
+    //color: #00a0e9;
+
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+    
+    }
+    
+}
+
+
+

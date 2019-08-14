@@ -1,0 +1,113 @@
+.box1 {
+  background-color: red;
+  width: 25%;
+  height: 200px;
+  float: left;
+  /*
+
+        //box1
+        @if ($i == 1) {
+            @include boxTemplate(30px);
+        }
+        //box2
+        @if ($i == 2) {
+            @include boxTemplate(30px);
+        }
+        //box3
+        @if ($i == 3) {
+            @include boxTemplate(30px);
+            //margin-left: $defalt-width;
+        }
+        //box4
+        @if ($i == 4) {
+            @include boxTemplate(30px);
+        }
+        */
+}
+
+.box2 {
+  background-color: blue;
+  width: 25%;
+  height: 200px;
+  float: right;
+  /*
+
+        //box1
+        @if ($i == 1) {
+            @include boxTemplate(30px);
+        }
+        //box2
+        @if ($i == 2) {
+            @include boxTemplate(30px);
+        }
+        //box3
+        @if ($i == 3) {
+            @include boxTemplate(30px);
+            //margin-left: $defalt-width;
+        }
+        //box4
+        @if ($i == 4) {
+            @include boxTemplate(30px);
+        }
+        */
+}
+
+.box3 {
+  background-color: yellow;
+  width: 25%;
+  height: 200px;
+  float: left;
+  /*
+
+        //box1
+        @if ($i == 1) {
+            @include boxTemplate(30px);
+        }
+        //box2
+        @if ($i == 2) {
+            @include boxTemplate(30px);
+        }
+        //box3
+        @if ($i == 3) {
+            @include boxTemplate(30px);
+            //margin-left: $defalt-width;
+        }
+        //box4
+        @if ($i == 4) {
+            @include boxTemplate(30px);
+        }
+        */
+}
+
+.box4 {
+  background-color: green;
+  width: 25%;
+  height: 200px;
+  float: right;
+  /*
+
+        //box1
+        @if ($i == 1) {
+            @include boxTemplate(30px);
+        }
+        //box2
+        @if ($i == 2) {
+            @include boxTemplate(30px);
+        }
+        //box3
+        @if ($i == 3) {
+            @include boxTemplate(30px);
+            //margin-left: $defalt-width;
+        }
+        //box4
+        @if ($i == 4) {
+            @include boxTemplate(30px);
+        }
+        */
+}
+
+.boxA:after {
+  content: "";
+  display: block;
+  clear: both;
+}

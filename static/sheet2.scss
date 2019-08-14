@@ -1,0 +1,62 @@
+$main-height: 200px;
+$base-color: red, blue,yellow, green;
+$defalt-width: 500px;
+
+@mixin boxTemplate($width: 100%, $height: $main-height, $float:left){
+    width: $width;
+    height: $height;
+    float: $float;
+}
+
+
+
+
+@for $i from 1 through 4 {
+    .box#{$i} {
+        background-color: nth($base-color,$i);
+
+        @if ($i==1){
+            @include boxTemplate(100%,$main-height,none);
+        }
+        @if ($i==2){
+            @include boxTemplate(100%,$main-height,none);
+        }
+        @if ($i==3){
+            @include boxTemplate(100%,$main-height,none);
+        }
+        @if ($i==4){
+            @include boxTemplate(100%,$main-height,none);
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .box2 {
+        @include boxTemplate(75%,$main-height,right);
+    }
+    .box3 {
+        @include boxTemplate(25%,$main-height,right);
+    }
+
+    .box4 {
+        float:left;
+        width: 20%;
+        height: $main-height;
+    }
+
+    .boxA {
+        &:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    }
+
+    .boxB {
+        float: left;
+        width: 80%;
+        background-color: orange;
+    }
+
+
+}
