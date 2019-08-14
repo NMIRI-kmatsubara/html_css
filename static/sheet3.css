@@ -1,3 +1,8 @@
+@charset "UTF-8";
+body {
+  font-family: 'メイリオ' , 'Hiragino Kaku Gothic Pro', sans-serif;
+}
+
 .site h1 {
   margin: 0;
   font-size: 30px;
@@ -24,6 +29,7 @@
   margin-bottom: 20px;
 }
 
+/*　横並びのメニュー */
 .menu ul {
   margin: 0;
   padding: 0;
@@ -51,4 +57,34 @@
 
 .menu li a:hover {
   background-color: #eeeeee;
+}
+
+/*　縦並びのメニュー */
+/*
+.menu {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        }
+    li {
+        a {
+            display: block;
+            padding: 5px;
+            color: #000000;
+            font-size: 14px;
+            text-decoration: none;
+
+            &:hover {
+                background-color: #eeeeee;
+            }
+        }
+    }
+}
+*/
+.copyright p {
+  margin: 0;
+  color: #666666;
+  font-size: 14px;
 }

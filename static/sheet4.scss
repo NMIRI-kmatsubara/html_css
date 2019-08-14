@@ -1,0 +1,21 @@
+$color: red, green, blue, yellow;
+
+@mixin defalt_box($color,$H: 200px, $W: 100% ) {
+    height: $H;
+    width: $W;
+    background-color: $color;
+}
+
+
+@for $i from 1 through 4 {
+    .box#{$i} {
+        @include defalt_box(nth($color,$i));
+        @if ($i==3 or $i==4) {
+            float: left;
+        }
+    }
+}
+
+.box2 {
+    float: left;
+}
