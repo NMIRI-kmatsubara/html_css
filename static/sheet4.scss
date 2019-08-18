@@ -1,3 +1,5 @@
+/* test */
+
 $color: red, green, blue, yellow, violet;
 
 @mixin defalt_box($color,$H: 200px, $W: 100% ) {
@@ -15,8 +17,10 @@ body {
     h1 {
         margin:0;
         font-size: 30px;
+        font-family: 'Paytone One', sans-serif;
+        font-weight: normal;
         a {
-            color: #000000;
+            color: #83a4a8;
             text-decoration: none;
         }
     }
@@ -55,6 +59,40 @@ body {
 }
 
 .kiji {
+    .kijicat {
+        margin-bottom: 25px;
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            &:after {
+                content:"";
+                display: block;
+                clear: both;
+            }
+            }
+        li {
+            float: left;
+            width: auto;
+    
+            a {
+                display: block;
+                margin-right: 5px;
+                padding: 3px;
+                border-radius: 2px;
+                color: #ffffff;
+                background-color: #75dbe7;
+                font-size: 12px;
+                text-decoration: none;
+    
+                &:hover {
+                    background-color: #94ecf6;
+                }
+    
+            }
+        }
+    }
+
     h1 {
         margin-top: 0;
         margin: {
@@ -62,14 +100,29 @@ body {
         } 
         font-size: 36px;
     }
+    h2 {
+        margin-top: 40px;
+        padding-left: 10px;
+        border-left: solid 10px #7cdac1;
+        font-weight: normal;
+    }
     p {
         margin: {
             top: 0;
             bottom: 20px;
         }
-
-
     }
+    /*記事投稿日*/
+    .kijiinfo {
+        margin-bottom: 20px;
+        margin-top: -10px;
+        i {
+            margin-right: 5px;
+            color: #aaaaaa;
+            font-size: 20px;
+        }
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -86,6 +139,10 @@ body {
         border-bottom: dotted 2px #dddddd;
         color: #666666;
         font-size: 18px;
+    }
+    i {
+        color: #888888;
+        margin-right: 5px;
     }
     ul {
         margin: 0;
